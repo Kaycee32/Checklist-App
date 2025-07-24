@@ -3,13 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Checklist App</title>
   </head>
   <body>
-    <h2>Checklist</h2>
-    <ul id="checklist"></ul>
-    <div id="summary"></div>
-    <button id="toggle-all">Toggle All Completed</button>
+    <div class="container">
+      <h1>Checklist</h1>
+
+      <form id="checklist-form">
+        <input
+          type="text"
+          id="item-input"
+          placeholder="Enter a task..."
+          required
+        />
+        <button type="submit">Add</button>
+      </form>
+
+      <ul id="checklist"></ul>
+
+      <div id="summary"></div>
+
+      <button id="toggle-all">Toggle All Completed</button>
+    </div>
 
     <script src="script.js"></script>
   </body>
